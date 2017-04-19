@@ -19,9 +19,10 @@
 - [x] Concurrency Test.  
 - [x] Requested Task release.
 - [X] UI Development.
-- [X] Tests 40% Coverage.
-- [X] UI Development.
-- [ ] UI Edits in how Stationboards appear ~> like product Design.
+- [x] Tests 40% Coverage.
+- [x] GitFlow support -> (master, develop, release, hotfix, features).
+- [ ] Conichi Splash Screen Animated. 
+- [ ] UI Edits ~> like product Design.
 - [ ] UI Integration. 
 - [ ] Tests 90% Coverage. 
 - [ ] Search & Save Station Features. 
