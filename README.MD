@@ -4,4 +4,4 @@
 //releases
 //note
 //
-![Basel Bus: IOS Conichi Code Challenge for mostafa esmaiel](https://raw.githubusercontent.com/Alamofire/Alamofire/assets/alamofire.png)
+![Basel Bus: IOS Conichi Code Challenge for mostafa esmaiel](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/BaselBus-branding.png)
