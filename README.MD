@@ -28,4 +28,4 @@
 - [ ] Search & Save Station Features. 
 
 ## Product Research
-> A brand is worthless if it doesn't *** Connect *** with the right audiences in a ***** relevant ***** way
+> A brand is worthless if it doesn't **Connect** with the right audiences in a **relevant** way
