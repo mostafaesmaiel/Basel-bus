@@ -10,7 +10,7 @@
 - [x] [Product Research](#product-research)
 - [x] Product Design and concept 
 - [x] [MVVMC Design Architecture](#mvvmc-architecture)
-- [x] [Concurrency Requests](#Concurrency,-why) 
+- [x] [Concurrency Requests](#concurrency-why) 
 - [x] Concurrency Test 
 - [x] Requested Task release
 - [X] UI Development
