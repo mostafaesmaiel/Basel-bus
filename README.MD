@@ -59,12 +59,14 @@ When you hear MVVM you will always see reactive development with (Reactive Exten
 I have used **Operations** in my network requests and main operations request in the app insted of simply using **Dispatch group** for different reasons : 
 
 * More powerefull for future featurs spacilly when it comes to manage the **dependecies.**
-* Send the right request at the right time with much more power of **canceling** the request anytime i want.
+* Send the right request at the right time leveraging power of **canceling** the request anytime i want.
 
 I have used 3 operations :
-	* Stations Fetch operation -> Getting the Stations and organzing the table view header. 
-	* GoogleImg Fetch operation -> Get the google image for the station using coordinats.
-	* Stationboard Fetch operation -> Getting the stationboards for every station by its name. 
+
+* Stations Fetch operation -> Getting the Stations and organzing the table view header. 
+* GoogleImg Fetch operation -> Get the google image for the station using coordinats.
+* Stationboard Fetch operation -> Getting the stationboards for every station by its name. 
+
 I have compined the GoogleImg Fetch operation and stationboard Fetch Operation in StationProviders class and i have used a refrnce for in a set of StationProviders so I can cancel the ongoing operations that I don't want to complete. 
 
 ```Swift
