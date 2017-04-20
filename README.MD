@@ -29,10 +29,12 @@
 
 ## Product Research
 > A brand is worthless if it doesn't **Connect** with the right audiences in a **relevant** way.
+> A brand is worthless if it doesn't **Connect** with the right audiences in a **relevant** way.
 
-I think i did very well in this research. The main coloring is comming from this [image](http://www.michaeltaylor.ca/bus-ch/basel/basel-828-mt.jpg) where you can obviusly see two things :
+I think i did very well in this research. The main coloring is coming from this [image](http://www.michaeltaylor.ca/bus-ch/basel/basel-828-mt.jpg) where you can obviously see two things :
 
-1- The green color is the main color for all busses in Basel and thats why i have choosed green with exact the same degree for the bus. To give him the same experince while using the app. 
+1- The **green color** is the main color for all busses in Basel and that's why I choose green color with exact hex degree for the bus. To give the rider the **same experience** while using the app. 
 
-2- The curvy design for the bus gives you the feeling comfort. Tried to not use any edges with the famous curvy font family (lato). Also implmented a curvey navigation bar so you can get the same expeirence. 
+2- The **curvy design** for the bus gives you the **comfort** feeling. Tried to not use any edges with the famous curvy font family **(Lato)**. Also implemented a **curvy navigation** bar so you can get the **same experience**. 
+
 * Screens: [1](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/FirstScreen.jpg), [2](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg) , [3] (https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg) 
