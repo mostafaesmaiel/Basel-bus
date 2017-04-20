@@ -28,11 +28,11 @@
 - [ ] Code refectory
 
 ## Product Research
-> A brand is worthless if it doesn't **Connect** with the right audiences in a **relevant** way.
+> A brand is worthless if it doesn't **connect** with the right audiences in a **relevant** way.
 
-I think i did very well in this research. The main identity is coming from an image for busses in Basel([image](http://www.michaeltaylor.ca/bus-ch/basel/basel-828-mt.jpg)) where you can obviously see two things :
+I think I did very well in this research. The main identity is coming from an image for busses in Basel([image](http://www.michaeltaylor.ca/bus-ch/basel/basel-828-mt.jpg)) where you can obviously see two things :
 
-1- The **green color** is the main color for all busses in Basel and that's why I choose green color with exact hex degree for the bus. To give the rider the **same experience** while using the app. 
+1- The **green color** is the main color for all busses in Basel and that's why I choose a green color with exact hex degree for the bus. To give the rider the **same experience** while using the app. 
 
 2- The **curvy design** for the bus gives you the **comfort** feeling. Tried to not use any edges with the famous curvy font family **(Lato)**. Also implemented a **curvy navigation** bar so you can get the **same experience**. 
 
@@ -60,13 +60,13 @@ I have used **Operations** in my network requests and main operations request in
 * More powerefull for future features specially when it comes to manage the **dependencies.**
 * Send the right request at the right time leveraging power of **canceling** the request anytime i want.
 
-I have used 3 operations :
+I have used 3 operations
 
-* Stations Fetch operation -> Getting the Stations and organizing the table view header. 
-* GoogleImg Fetch operation -> Get the google image for the station using coordinates.
-* Stationboard Fetch operation -> Getting the stationboards for every station by its name. 
+* `StationsFetchOperation` -> Getting the Stations and organizing the table view header. 
+* `GoogleImgFetchOperation` -> Get the google image for the station using coordinates.
+* `StationboardFetchOperation` -> Getting the stationboards for every station by its name. 
 
-I have combined the GoogleImg Fetch operation and stationboard Fetch Operation in StationProviders class and I have used a reference for in a set of StationProviders so I can cancel the ongoing operations that I don't want to complete. 
+I have combined the GoogleImg Fetch operation and stationboard Fetch Operation in `StationProviders` class and I have used a reference for in a set of StationProviders so I can cancel the ongoing operations that I don't want ßto complete. 
 
 ```Swift
     var stationProviders = Set<StationProvider>()
