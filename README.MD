@@ -16,7 +16,7 @@
 - [X] UI Development
 - [x] Tests 40% Coverage
 - [x] GitFlow support -> (master, develop, release, hotfix, features)
-- [ ] Code refactory
+- [ ] Code refectory
 - [ ] Hotfix release
 - [X] Conichi Splash Screen Animated
 - [ ] UI Edits ~> like product [Design](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg)
@@ -25,10 +25,9 @@
 - [ ] Tests 90% Coverage
 - [ ] Search & Save Station Features
 - [ ] from delegates to binding 
-- [ ] Code refactory
+- [ ] Code refectory
 
 ## Product Research
-> A brand is worthless if it doesn't **Connect** with the right audiences in a **relevant** way.
 > A brand is worthless if it doesn't **Connect** with the right audiences in a **relevant** way.
 
 I think i did very well in this research. The main identity is coming from an image for busses in Basel([image](http://www.michaeltaylor.ca/bus-ch/basel/basel-828-mt.jpg)) where you can obviously see two things :
@@ -40,13 +39,13 @@ I think i did very well in this research. The main identity is coming from an im
 * Screens: [1](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/FirstScreen.jpg), [2](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg) , [3](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/SplashScreen.jpg) 
 
 ## MVVMC Architecture
-who didn't suffer from **Massive View Controller** while developing in Swift, the cuppling between the views and the view controller push you to the insanity. that's why when I have started this project I was always thinking about how to avoid this problem.I have came across **clean Swift** which is really good docmented and also **viper** before which is good in big projects and awesome in seperation of concerns but at the end of the day I felt it's really over enginerred.  That's why I have used the famous **MVVM with Coordinators** in my archtecture. Which I found really clean and resulable. Supported with **Conncurrent operations**. With Protocol Oriented Programming I felt really powerfull and happy with my code.
+who didn't suffer from **Massive View Controller** when developing Swift applications, the coupling between the views and the view controller push you to the insanity and the infinity of changes that you will need to have to just support TV OS for different view. that's why when I have started this project I was always thinking about how to avoid this problem.I have came across **clean Swift** which is really good documented and also **viper** before which is good in big projects and awesome in separation of concerns but at the end of the day I felt it's really over engineered.  That's why I have used the famous **MVVM with Coordinators** in my architecture. Which I found really clean and reusable. Supported with **Concurrent operations**. With Protocol Oriented Programming I felt really powerful and happy with my code.
 
 Please Note: 
-* The huge sepration of concerns in the code with protocol oriented programming I can acutlly use anything in the implementation. 
-* The **reuseablity** of **ViewModel** and **model** objects. 
+* The huge separation of concerns in the code with protocol oriented programming I can actually use anything in the implementation. 
+* The **reuseability** of **ViewModel** and **Model** objects. 
 * getting the real data from **Model** with Async support gives me the power of easily change the data source either from network, Coredata or anything else. 
-* **Testability**
+* **Test-ability**
 
 
 ### Binding Support : 
@@ -56,24 +55,24 @@ When you hear MVVM you will always see reactive development with (Reactive Exten
 
 
 ## Concurrency, why?
-I have used **Operations** in my network requests and main operations request in the app insted of simply using **Dispatch group** for different reasons : 
+I have used **Operations** in my network requests and main operations request in the app instead of simply using **Dispatch group** for different reasons : 
 
-* More powerefull for future featurs spacilly when it comes to manage the **dependecies.**
+* More powerefull for future features specially when it comes to manage the **dependencies.**
 * Send the right request at the right time leveraging power of **canceling** the request anytime i want.
 
 I have used 3 operations :
 
-* Stations Fetch operation -> Getting the Stations and organzing the table view header. 
-* GoogleImg Fetch operation -> Get the google image for the station using coordinats.
+* Stations Fetch operation -> Getting the Stations and organizing the table view header. 
+* GoogleImg Fetch operation -> Get the google image for the station using coordinates.
 * Stationboard Fetch operation -> Getting the stationboards for every station by its name. 
 
-I have compined the GoogleImg Fetch operation and stationboard Fetch Operation in StationProviders class and i have used a refrnce for in a set of StationProviders so I can cancel the ongoing operations that I don't want to complete. 
+I have combined the GoogleImg Fetch operation and stationboard Fetch Operation in StationProviders class and I have used a reference for in a set of StationProviders so I can cancel the ongoing operations that I don't want to complete. 
 
 ```Swift
     var stationProviders = Set<StationProvider>()
 ```
-> Using operations enhanced the performance for the application to the Max! As I'm Only Requesting the detials for the current Station outsidet the main thread with different Qos helped in increasing the application performance in general. 
+> Using operations enhanced the performance for the application to the Max! As I'm Only Requesting the details for the current Station outside the main thread with different Qos helped in increasing the application performance in general. 
 
 #### Dependency Injection: 
-Note also that i have used constructor depenedency injection in all of my operations and that's helped me alot in the unit tests.
+Note also that i have used constructor dependency injection in all of my operations and that's helped me alot in the unit tests.
 
