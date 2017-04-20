@@ -12,7 +12,7 @@
 [![Packagist](https://img.shields.io/badge/Tested-40%25-gray.svg)]()
 
 ## Road Map 
-- [x] Product Research.(#product-research)
+- [x] [Product Research](#product-research)
 - [x] Product Design and concept.  
 - [x] MVVMC Design Architecture.
 - [x] Concurrency Requests.  
@@ -37,4 +37,4 @@ I think i did very well in this research. The main coloring is coming from this 
 
 2- The **curvy design** for the bus gives you the **comfort** feeling. Tried to not use any edges with the famous curvy font family **(Lato)**. Also implemented a **curvy navigation** bar so you can get the **same experience**. 
 
-* Screens: [1](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/FirstScreen.jpg), [2](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg) , [3] (https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg) 
+* Screens: [1](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/FirstScreen.jpg), [2](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg) , [3](https://github.com/mostafaesmaiel/Basel-bus/blob/master/Design/LiveBusView.jpg) 
